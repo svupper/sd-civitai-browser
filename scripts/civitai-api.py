@@ -131,8 +131,8 @@ def download_file_thread(url, file_name, content_type, use_new_folder, model_nam
         folder = "models/Lora"
         new_folder = "models/Lora/new"
     elif content_type == "LoCon":
-        folder = "models/Lora"
-        new_folder = "models/Lora/new"
+        folder = "models/LyCORIS"
+        new_folder = "models/LyCORIS/new"
     if content_type == "TextualInversion" or content_type == "VAE" or content_type == "AestheticGradient":
         if use_new_folder:
             model_folder = new_folder
@@ -184,8 +184,8 @@ def save_text_file(file_name, content_type, use_new_folder, trained_words, model
         folder = "models/Lora"
         new_folder = "models/Lora/new"
     elif content_type == "LoCon":
-        folder = "models/Lora"
-        new_folder = "models/Lora/new"
+        folder = "models/LyCORIS"
+        new_folder = "models/LyCORIS/new"
     if content_type == "TextualInversion" or content_type == "VAE" or content_type == "AestheticGradient":
         if use_new_folder:
             model_folder = new_folder
@@ -371,7 +371,7 @@ def save_image_files(preview_image_html, model_filename, list_models, content_ty
     elif content_type == "LORA":
         folder = "models/Lora"
     elif content_type == "LoCon":
-        folder = "models/Lora"
+        folder = "models/LyCORIS"
     
     model_folder = os.path.join(folder,list_models.replace(" ","_").replace("(","").replace(")","").replace("|","").replace(":","-"))
 
